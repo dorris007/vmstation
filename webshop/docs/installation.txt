@@ -1,0 +1,58 @@
+INSTALLING FREEWEBSHOP.ORG
+Copyright 2006 Elmar Wenners
+----------------------------
+
+UPLOADING THE FILES
+-------------------
+Upload all the files to an FTP server using an FTP program.
+
+   !!! READ CAREFULLY WHICH FILES SHOULD BE CHMODDED !!!
+
+Upload the files/folders like this:
+
+FOLDER                   UPLOAD IN              CHMOD
+<cats>                   ASCII                  777
+<docs>                   ASCII                  
+<gfx>                    BINARY                 
+<langs>                  ASCII                  777
+<orders>                 ASCII                  777
+<prodgfx>                BINARY                 777
+<includes>               ASCII                  
+
+All the PHP,CSS and SQL files should be uploaded in ASCII.
+All picture should be uploaded in Binary.
+
+
+Make SURE you CHMOD the following files to 777 (or 666):
+
+ banned.txt           
+ countries.txt        
+ includes\settings.inc.php         
+ langs\xx\main.txt
+ langs\xx\conditions.txt
+ langs\xx\shipping.txt
+ langs\xx\aboutus.txt
+
+
+STARTING THE INSTALLATION PROCESS
+---------------------------------
+After you uploaded everything, use an internet browser to browse
+to http://[the url of your webshop]/[maybe a folder]/install.php
+
+This script will try to access your database and fill it with the
+appropiate tables and fields. After this process is done, your 
+shop is ready to be used.
+
+
+FINISHING UP:
+-------------
+Don't forget to remove/rename install.php after you finished the
+procedure. But if you do forget, the webshop software will give
+a warning and will not continue until you remove/rename it.
+
+Next thing you need to do is log into your new webshop and change
+the administrator password, and next editing all the shop settings.
+For more information on how to change these settings, please read
+the manual.txt file.
+
+Have fun using FreeWebshop.org!

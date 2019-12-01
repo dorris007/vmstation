@@ -1,0 +1,97 @@
+MANUAL FOR FREEWEBSHOP.ORG
+Copyright 2006 Elmar Wenners
+----------------------------
+
+
+CHANGING THE ADMINISTRATOR PASSWORD:
+------------------------------------
+When you log into a fresh installed shop, the administrator password is set
+to default (admin_1234). It's not safe to keep using that password, so you
+need to change it. 
+
+Login as administrator and click the 'administration' link in the navigation
+menu. This presents you with a screen which holds all the adminstation options.
+
+Click the 'Customers'-icon. The first customer in the list is the administrator.
+In the last cell of the first row are the options for that customer. Hover over
+the first icon. A tooltip will say it is the 'Edit' button. Click it.
+
+Change the password and all other data needed, like the email address, etc. 
+Click the 'Save' button, and you are done!
+
+
+ARRANGING YOUR SHOP:
+--------------------
+Before you can add products to your shop, you need to make product groups and
+categories. This webshop uses the following structure:
+
+-GROUP 1
+  |
+  +--CATEGORY 1
+  |
+  +--CATEGORY 2
+
+-GROUP 2
+  |
+  +--CATEGORY 3
+  
+
+So first you should make product groups.
+
+
+MANAGING GROUPS:
+----------------
+Click the 'Categories&Groups' icon in the administration screen.
+
+In this next screen you can add, rename, move and remove groups. Use the 'Add group'
+to add your groups. You'll notice that while you are adding them, the product menu
+on the left is starting to fill itself with your groups.
+
+The rest of the group functions are simple to use, so try to rename a group, or remove
+it to get a feel of how this screen works.
+
+Next thing we need to do is add some categories to our new groups.
+
+
+MANAGING CATEGORIES:
+--------------------
+Click the 'Categories&Groups' icon in the administration screen.
+
+Find the 'Add category' option. Now select a group to which you want add a category from
+the pulldown menu. Enter a name for this category and press the 'Add category' button. Do
+this for all the categories you need.
+
+When you have your shop structure ready, you can add products.
+
+
+MANAGING PRODUCTS:
+------------------
+Click on the 'Products' icon in the administration screen.
+
+A window will appear, in which you can enter the information of a new product. Select a
+group and category from the pulldown menu in which you want the product to appear. Next
+enter an ID. 
+
+NOTE: If you have choosen (in the settings screen) to use the product ID to be used for 
+      the picture names, then please keep in mind not to use any characters that are not 
+      allowed in filenames. You'd better stick with a-z, 0-9.
+      
+      If you have the default setting (Database ID), then ignore this note
+
+      
+The next field is the description. Here you can describe the product, and use HTML-code
+to format the text. I won't explain HTML to you, but here are some common codes:
+
+This is a <B>great</B> product                  (great will be printed bold)
+This is a <I>great</I> product                  (great will be printed italic)
+This is a <U>great</U> product                  (great will be printed underlined)
+This is a <FONT COLOR=red>great</FONT> product  (great will be printed in red)
+
+You can combine any of these HTML codes.
+This is a <FONT COLOR=red><B><I>great</I></B></FONT> product
+
+
+Next up is the price of your product. If you don't use VAT (see settings) then you just
+fill in the price. If you do however use VAT, the screen will tell you if you need to
+enter the price including or excluding VAT.
+

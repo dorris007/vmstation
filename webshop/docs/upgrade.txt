@@ -1,0 +1,144 @@
+UPGRADE INSTRUCTIONS FOR FREEWEBSHOP.ORG
+Copyright 2006 Elmar Wenners
+----------------------------
+
+Upgrading from 2.2.2 to 2.2.3
+-----------------------------
+STEP1:
+  If you want to be totally safe, you just follow the instructions
+  found under 'Upgrading from 2.2.1 to 2.2.2', because the procedure
+  is exactly the same.
+  
+  If you made a lot of changes in the source, and only wish to update
+  the absolute nescessary files, then do the following:
+  
+  Upload the following files:
+   - index.php
+   - cart.php
+   - includes\subs.inc.php
+   - includes\readvals.inc.php
+   - includes\readsettings.inc.php
+
+   
+YOU'RE DONE!   
+
+
+Upgrading from 2.2.1 to 2.2.2
+-----------------------------
+STEP1:
+  If you are upgrading from version 2.1(.x) then fist follow the steps of 
+  "Upgrading from 2.1.x to 2.2" found below
+
+STEP 2:
+  You don't have to reupload everything, like the gfx, addons and prodgfx folder. Just
+  upload the following:
+  
+  Upload the php files in the root of the installation, excluding:
+   - install.php
+   - banned.txt
+   - countries.txt
+   - freewebshop.css (in case you made modifications to the layout)
+   
+  Upload all the files in the includes folder, excluding:
+   - includes\settings.inc.php
+
+       
+YOU'RE DONE!
+
+
+Upgrading from 2.2 to 2.2.1
+---------------------------
+STEP1:
+  If you are upgrading from version 2.1.x then fist follow the steps of 
+  "Upgrading from 2.1.x to 2.2" found below
+
+
+STEP 2: 
+  Download your includes\settings.inc.php file and write down the
+  database values you filled in. Then remove the file
+  
+  Now open the includes\settings.inc.php from the version 2.2.1 package
+  and fill in the database values.
+  
+  OPTIONAL:
+  If you would like to use SMTP mail, then please also fill in these fields
+  in at the bottom of the settings.inc.php file.
+  
+  For example:
+    // SMTP values (optional)
+    $smtp_server = "smtp.yourserver.com";
+    $smtp_port = "25";
+    $smtp_user = "testuser";
+    $smtp_pass = "testpass123";
+
+    
+STEP 3:
+  Upload all files except:
+   - install.php
+   - banned.txt
+   - countries.txt  
+
+       
+YOU'RE DONE!
+
+
+Upgrading from 2.1.x to 2.2
+---------------------------
+STEP1:
+* insert the file "update 2.1.x to 2.2.sql" into your existing database
+  TIP: Use the pricelist uploader in the administration screen to load the SQL file 
+       into the database
+  
+       
+STEP2:
+  On your server, rename settings.php to settings.inc.php and move it to the folder
+  <includes>
+
+  
+STEP3:        
+  Then, upload all the files, except 
+   - install.php
+   - countries.txt
+   - banned.txt
+   - includes\settings.inc.php
+    
+STEP4:  
+  Also, the only language files that are included are English. If you use other languages 
+  as well, then you need to download the 2.2 version (if available) of them too.
+
+STEP5:         
+  The last step is to set/check the new values in the settings screen (adminstration/edit settings)
+
+
+Upgrading from 2.0.x to 2.1
+---------------------------
+* insert the file "update 2.0.x to 2.1.sql" into your existing database
+  TIP: Use the pricelist uploader in the administration screen to load the SQL file 
+       into the database
+       
+  Then, upload all the files, except install.php and settings.php
+  Also, the only language files that are included are Dutch and English. If you use
+  other languages as well, then you need to download the 2.1 version (if available)
+  of them too.
+       
+  The last step is to set the new values in the settings screen (adminstration/edit settings)
+
+  
+Upgrading from 1.x to 2.x
+-------------------------
+* the shop has changed too much internally. please drop the old database and
+  totally reinstall the new 2.x version
+  
+
+Upgrading from 1.1a to 1.1b
+---------------------------
+* overwrite all php files (EXCEPT settings.php and install.php) and update the
+  lang.txt files of the languages you support on your webshop
+* import upgrade1.1a to 1.1b.sql into your database
+* upload the "themes" folder for 2 extra themes (optional)
+
+  
+Upgrading from 1.0 to 1.1/1.1a
+------------------------------
+* remove the old database and all old files and reinstall the 1.1/1.1b
+  package. the changes are to drastic to make an easy upgrade

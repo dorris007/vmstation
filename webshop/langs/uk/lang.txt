@@ -1,0 +1,527 @@
+<?php
+// first some values that can also be used further along in this lang file
+// database values for orders
+$txt['db_shipping1'] = 'Pick up the products yourself on appointment, no shipping rate';
+
+// database values for payments
+$txt['db_payment1'] = '通过银行支付';
+$txt['db_payment2'] = 'Pay at store (only applicable when Picking up)';
+$txt['db_payment3'] = 'Pay via PayPal';
+$txt['db_payment4'] = 'Pay at receive';
+
+// order status
+$txt['db_status1'] = '接收到订单';
+$txt['db_status2'] = '等待付款';
+$txt['db_status3'] = '付款确认';
+$txt['db_status4'] = '订单处理中';
+$txt['db_status5'] = '商品已经被发送到客户';
+$txt['db_status6'] = '客户已经签收';
+$txt['db_status7'] = '订单被取消';
+
+$txt['db_status10'] = '状态说明';
+$txt['db_status11'] = '已经收到您的订单，我们的工作人员正在处理';
+$txt['db_status12'] = '您的订单已经得到确认，现在需要你支付商品货款';
+$txt['db_status13'] = '付款已经收到，已经发送电子邮件给您，希望您电话确认，准备发货';
+$txt['db_status14'] = '订购的商品已经发出，您准备好接收';
+$txt['db_status15'] = '您订购的商品已经通过邮政服务发送到您设定的地址';
+$txt['db_status16'] = '商品已经被您签收，订单已经完成';
+$txt['db_status17'] = '订单已经被取消';
+
+// database values for stock
+$txt['db_stock1'] = '现货';
+$txt['db_stock2'] = '缺货';
+$txt['db_stock3'] = '仓库';
+
+$txt['db_stock10'] = '库存说明';
+$txt['db_stock11'] = '有现货，如果下订单，将会很快发货';
+$txt['db_stock12'] = '该商品暂时缺货';
+$txt['db_stock13'] = '商品在仓库中，很快可以拿到商品';
+
+// general values
+$txt['general1'] = '访问失败!';
+$txt['general2'] = '您的IP地址被锁定';
+$txt['general3'] = '新';
+$txt['general4'] = '返回到管理员菜单';
+$txt['general5'] = 'VAT';
+$txt['general6'] = 'excl.';
+$txt['general7'] = 'incl.';
+$txt['general8'] = 'NOTE: The webshop is disabled! Customers can not browse or order products';
+$txt['general9'] = '404 error. Page not found!';
+$txt['general10'] = 'You have been banned from this webshop';
+$txt['general11'] = 'About us';
+$txt['general12'] = 'Error';
+$txt['general13'] = 'Notification';
+
+// header.php
+$txt['header1'] = '安全设定';
+$txt['header2'] = '欢迎';
+$txt['header3'] = 'guest';
+$txt['header4'] = '<font color=red><b>install.php</b></font> 需要删除或者更改文件名才能够继续!';
+
+// menu.php
+$txt['menu1'] = '主页';
+$txt['menu2'] = '购物车';
+$txt['menu3'] = '购物结算';
+$txt['menu4'] = '查询';
+$txt['menu5'] = '活动信息';
+$txt['menu6'] = '促销产品';
+$txt['menu7'] = '购买流程';
+$txt['menu8'] = '信息反馈';
+$txt['menu9'] = '管理员';
+$txt['menu10'] = '个人信息';
+$txt['menu11'] = '注销';
+$txt['menu12'] = '登录';
+$txt['menu13'] = '注册';
+$txt['menu14'] = '功能菜单';
+$txt['menu15'] = '商品';
+$txt['menu16'] = '<font color=red><b>新</b></font> 商品';
+$txt['menu17'] = '没有商品';
+$txt['menu18'] = '关于我们';
+
+// sendprocedure.php
+$txt['send1'] = 'Shipping method';
+
+// cart.php
+$txt['cart1'] = '购物车';
+$txt['cart2'] = '购物车为空.<br><br>';
+$txt['cart3'] = '说明';
+$txt['cart4'] = '价格';
+$txt['cart5'] = '数量';
+$txt['cart6'] = '删除';
+$txt['cart7'] = '总计';
+$txt['cart8'] = '清空';
+$txt['cart9'] = '结算';
+$txt['cart10'] = '更新';
+$txt['cart11'] = '购物车内容';
+
+// browse.php
+$txt['browse1'] = '搜索结果';
+$txt['browse2'] = '产品描述';
+$txt['browse3'] = '价格排序';
+$txt['browse4'] = '从低到高排序';
+$txt['browse11'] = '从高到低排序';
+$txt['browse5'] = '没有符合查询条件的商品';
+$txt['browse6'] = 'NOTE: No rights can be derived from the images. Prices are with reservation';
+$txt['browse7'] = '编辑';
+$txt['browse8'] = '删除';
+$txt['browse9'] = '购物清单';
+$txt['browse10'] = '更改图片';
+
+// submenu.php
+$txt['submenu1'] = '该类商品中的目录';
+$txt['submenu2'] = '该类商品中没有商品目录';
+
+// main.php
+$txt['main1'] = 'Welcome';
+$txt['main2'] = 'Special offers';
+
+// details.php
+$txt['details1'] = '商品信息';
+$txt['details2'] = '商品名称';
+$txt['details3'] = '搜索图片';
+$txt['details4'] = '商品描述';
+$txt['details5'] = '单价';
+$txt['details6'] = '数量';
+$txt['details7'] = '订购';
+$txt['details8'] = '返回列表';
+$txt['details9'] = 'Click for full size';
+
+// conditions.php
+$txt['conditions1'] = '我同意以上条款';
+$txt['conditions2'] = '我不同意以上条款';
+$txt['conditions3'] = '禁止';
+$txt['conditions4'] = '预定当前不可用';
+$txt['conditions5'] = '编辑网站条款';
+
+// shipping.php
+$txt['shipping1'] = '发货和收款';
+$txt['shipping2'] = '请选择发货方式';
+$txt['shipping3'] = '其他附加信息';
+$txt['shipping9'] = '完成预定';
+$txt['shipping10'] = '选择付款方式';
+
+// checkout.php
+$txt['checkout2'] = '该页面已经过期，请回到购物车页面，然后单击结算按钮';
+$txt['checkout3'] = "亲爱的用户 $lastname,\n\n\n该信息用于确认你的订单，商场名称: $shopname ($shopurl) \n\n订单编号: $webid\n客户编号: $customerid\n\n您订购了以下商品:\n";
+$txt['checkout4'] = ' x product ';
+$txt['checkout5'] = ' a piece';
+$txt['checkout6'] = "\n";
+$txt['checkout7'] = 'You tried ordering:';
+$txt['checkout8'] = 'Currently in stock:';
+$txt['checkout9'] = "\n\n你可以在任何时候通过以下链接查看订单的状态: $shopurl/index.php?page=orders&id=$customerid\n\n谢谢您的订购.\n如果有任何问题，可以同我们直接联系";
+$txt['checkout10'] = '确认您的订单，商场名称:$shopname';
+$txt['checkout11'] = '您的订单已经完成，系统已经向您的邮箱发送了确认邮件.';
+$txt['checkout12'] = '您的确认邮件发送失败，下面是确认邮件的信息.';
+$txt['checkout13'] = '下面是确认邮件内容:';
+$txt['checkout15'] = '你订购的商品库存不足:';
+$txt['checkout16'] = "发货方式: ";
+$txt['checkout17'] = "发货地址:\n$company\n$address\n$zipcode $city\n$country";
+$txt['checkout19'] = "付款方式: ";
+$txt['checkout20'] = "银行信息:\n帐号: $bankaccount\n用户名: $bankaccountowner\n城市: $bankcity\n国家: $bankcountry\n银行名称: $bankname\nIBAN: $bankiban\nBIC: $bankbic\n说明: $webid";
+$txt['checkout21'] = "如果库存充足，我们会发送确认邮件给您.";
+$txt['checkout22'] = "使用信用卡支付货款给我们.";
+$txt['checkout23'] = "当年收到商品的时候，需要支付邮资.";
+$txt['checkout24'] = "发货单总价: $currency_symbol $totalprint (包括 $currency_symbol $print_sendcosts 发货费)";
+$txt['checkout25'] = "含税 $show_vat ".$txt['general5'];
+$txt['checkout26'] = "请在 $paymentdays 天内付清款项. 收款后，我们将会尽快处理订单";
+$txt['checkout27'] = 'PayPal transfer';
+
+// search.php
+$txt['search1'] = '商品查询';
+$txt['search2'] = '查询关键字';
+$txt['search3'] = '查询方式';
+$txt['search4'] = '全部符合';
+$txt['search5'] = '任一符合';
+$txt['search6'] = '查询';
+
+// guarantee.php
+$txt['guarantee1'] = '购物流程';
+
+// contact.php
+$txt['contact1'] = '信息反馈 '. $shopurl;
+$txt['contact2'] = '信息发送';
+$txt['contact3'] = '您的信息发送成功，如果您需要回复，我们会尽快处理';
+$txt['contact4'] = '错误';
+$txt['contact5'] = '请填写表单中的信息.<br><a href="javascript:history.go(-1)"><b>返回</b></a>.';
+$txt['contact6'] = '联系方式';
+$txt['contact7'] = '如何联系我们';
+$txt['contact8'] = 'E-mail';
+$txt['contact9'] = '电话';
+$txt['contact10'] = '传真';
+$txt['contact11'] = '通过网站与我们联系:';
+$txt['contact12'] = '发送信息';
+$txt['contact13'] = '您的姓名';
+$txt['contact14'] = '您的地址';
+$txt['contact15'] = '您的信息';
+
+// checklogin.php
+$txt['checklogin1'] = '系统登录';
+$txt['checklogin2'] = '用户名';
+$txt['checklogin3'] = '密码';
+$txt['checklogin4'] = '登录';
+$txt['checklogin5'] = '注册';
+$txt['checklogin6'] = '为什么要注册会员?';
+$txt['checklogin7'] = 'In order to purchase products from our webshop you need to become a member. During registration we need your name, a shipping address , e-mail address, etc. We need this information to correctly handle your purchase.<br /><br /><strong>Your data will only be used by us.</strong><br /><br /><br />After you become a member you additionally can:<ul><li>Logon to the webshop from any PC<li>Order products<li>Monitor the status of ordered products<li>Manage your shopping cart</ul>';
+$txt['checklogin8'] = '忘记密码';
+$txt['checklogin9'] = '填写你注册时使用的EMAIL地址，我们将通过EMAIL的方式发送密码给你：';
+$txt['checklogin10'] = '发送邮件';
+$txt['checklogin11'] = '忘记密码？';
+$txt['checklogin12'] = '你的登录密码已经发送';
+$txt['checklogin13'] = '忘记密码 '. $shopurl;
+$txt['checklogin14'] = 'This email was sent to you, because you requested your login data on our webshop ('. $shopurl .').';
+$txt['checklogin15'] = '没有和你相符的email';
+$txt['checklogin18'] = '返回';
+
+// login.php
+$txt['login1'] = '登录失败，请稍候';
+$txt['login2'] = '或者单击这里';
+$txt['login3'] = '您正在登录，请稍候';
+
+// logout.php
+$txt['logout1'] = '您正在注销..';
+
+// my.php
+$txt['my3'] = '个人信息';
+$txt['my4'] = '在本页面，您可以查看个人全部信息';
+$txt['my5'] = '个人选项';
+$txt['my6'] = '客户编号';
+$txt['my7'] = '查看资料';
+$txt['my8'] = '查看订单';
+$txt['my9'] = '查看购物车';
+
+// admin.php
+$txt['admin1'] = '商品管理系统';
+$txt['admin2'] = '订单管理';
+$txt['admin3'] = '会员管理';
+$txt['admin4'] = '库存管理';
+$txt['admin5'] = '商品管理';
+$txt['admin6'] = '分类管理';
+$txt['admin7'] = '数据库维护';
+$txt['admin8'] = '系统设置';
+$txt['admin9'] = '更新价格';
+$txt['admin10'] = '维护所有数据库表..';
+$txt['admin11'] = '正在维护';
+$txt['admin12'] = '维护完成!';
+$txt['admin13'] = '系统支持';
+$txt['admin14'] = '检查更新';
+$txt['admin15'] = '编辑条款信息';
+$txt['admin16'] = '编辑促销产品';
+$txt['admin17'] = '编辑购物流程';
+$txt['admin18'] = '编辑发货省份';
+$txt['admin19'] = '禁止列表';
+$txt['admin20'] = '关于我们';
+$txt['admin21'] = '付款方式';
+$txt['admin22'] = '头版';
+$txt['admin23'] = '改变系统设置';
+$txt['admin24'] = '编辑文本';
+$txt['admin25'] = '信息';
+
+// customeradmin.php
+$txt['customeradmin1'] = '姓名';
+$txt['customeradmin2'] = '日期';
+$txt['customeradmin3'] = 'E-mail';
+$txt['customeradmin4'] = '电话';
+$txt['customeradmin5'] = '选项';
+$txt['customeradmin6'] = '会员管理';
+
+// orderadmin.php
+$txt['orderadmin1'] = '您的订单当前状态如下: ';
+$txt['orderadmin2'] = ' 已经被修改';
+$txt['orderadmin3'] = '订单被成功删除！ ';
+$txt['orderadmin4'] = " 已经被修改\n\n请访问 http://$shopurl/index.php?page=orders&id=";
+$txt['orderadmin5'] = ' 查看当前的订单状态';
+$txt['orderadmin6'] = '收信人 ';
+$txt['orderadmin7'] = '是否发送email? ';
+$txt['orderadmin8'] = '更新';
+$txt['orderadmin9'] = '所有订单';
+$txt['orderadmin10'] = '没有合适的订单信息';
+$txt['orderadmin11'] = '显示';
+$txt['orderadmin12'] = '提示：客户增加了额外信息!';
+$txt['orderadmin13'] = '订单管理';
+$txt['orderadmin14'] = 'Change status';
+$txt['orderadmin15'] = 'Order status is changed';
+
+// orders.php
+$txt['orders3'] = '下面是您的订单信息以及订单状态<br>单击订单编号可以查看详细订单信息';
+$txt['orders4'] = '订单编号';
+$txt['orders5'] = '运费';
+$txt['orders6'] = '总价';
+$txt['orders7'] = '订购日期';
+$txt['orders8'] = '状态';
+$txt['orders9'] = '您没有下任何订单';
+
+// customer.php
+$txt['customer2'] = '客户被删除';
+$txt['customer3'] = '返回';
+$txt['customer4'] = '错误!';
+$txt['customer5'] = '您必须解决错误然后继续';
+$txt['customer6'] = '有*号字段必须填';
+$txt['customer7'] = '用户名中不能包含空格';
+$txt['customer8'] = '两次密码不一致';
+$txt['customer9'] = '密码最少5个字符';
+$txt['customer10'] = 'email地址输入格式错误';
+$txt['customer11'] = '欢迎来到 '.$shopname;
+$txt['customer12'] = "亲爱的顾客 $tussenvoegsels $naam,\n\n谢谢登录 $shopname Webshop ($shopurl).\n\n现在您可以登录网站然后订购商品。\n或者可以查看订单信息。\n\n下面是您的注册信息:\nLogin name:  $login\nPassword: $pass1\n\nKeep this data safe!\n\nSee you soon at $shopurl\n\nKind regards,\n\n\nThe webmaster";
+$txt['customer13'] = '信息被保存.<br><a href=index.php?page=orders>单击这里登录</a>';
+$txt['customer14'] = '请提供尽可能多的信息';
+$txt['customer15'] = '用户名*';
+$txt['customer16'] = '密码*';
+$txt['customer17'] = '确认密码*';
+$txt['customer18'] = '姓名*';
+$txt['customer19'] = 'QQ号';
+$txt['customer20'] = '主页*';
+$txt['customer21'] = '地址*';
+$txt['customer22'] = '邮编*';
+$txt['customer23'] = '城市*';
+$txt['customer24'] = '省份*';
+$txt['customer25'] = '电话';
+$txt['customer26'] = 'E-mail*';
+$txt['customer27'] = '*为必须填写';
+$txt['customer28'] = '保存信息';
+$txt['customer29'] = '用户名已经存在';
+$txt['customer30'] = '公司';
+$txt['customer31'] = '拒绝!';
+$txt['customer32'] = '你试图删除管理员帐号，被拒绝.';
+$txt['customer33'] = '( 5 到 10 个字符)';
+$txt['customer34'] = '你选择的email地址已经存在';
+$txt['customer35'] = '单击这里登录';
+
+// readorder.php
+$txt['readorder1'] = '确认';
+$txt['readorder2'] = '返回订单列表';
+
+// editsettings.php
+$txt['editsettings1'] = '修改系统设置';
+$txt['editsettings2'] = '保存设置';
+$txt['editsettings3'] = '颜色主题';
+$txt['editsettings4'] = '默认发货省份 <a href=# class=info>(?)<span>设置发货的地址</span></a>';
+$txt['editsettings5'] = '标准发货费用 <a href=# class=info>(?)<span>发货的费用</span></a>';
+$txt['editsettings6'] = '国外发货费用';
+$txt['editsettings7'] = '收货付款的发货费用 <a href=# class=info>(?)<span>设置收货付款的费用</span></a>';
+$txt['editsettings8'] = '货币';
+$txt['editsettings9'] = '货币代号 <a href=# class=info>(?)<span>设置货币的代码:￥</span></a>';
+$txt['editsettings10'] = '在几天内支付 <a href=# class=info>(?)<span>设置在几天内付款！</span></a>';
+$txt['editsettings11'] = '税率 <a href=# class=info>(?)<span>设置税率！</span></a>';
+$txt['editsettings12'] = '税率百分比 <a href=# class=info>(?)<span>设置税率的百分数！</span></a>';
+$txt['editsettings13'] = '默认为含税价格';
+$txt['editsettings14'] = '销售Email <a href=# class=info>(?)<span>设置销售人的EMAIL地址</span></a>';
+$txt['editsettings15'] = '商场名称';
+$txt['editsettings16'] = '商场网址 <a href=# class=info>(?)<span>http://www.pinjie.com/eshop</span></a>';
+$txt['editsettings17'] = '默认语言';
+$txt['editsettings18'] = '订单前缀 (可选) <a href=# class=info>(?)<span>设置订单的前缀，例如: WEB-</span></a>';
+$txt['editsettings19'] = '订单后缀 (可选) <a href=# class=info>(?)<span>设置订单的后缀，例如年份: -06</span></a>';
+$txt['editsettings20'] = '是否使用库存数量 <a href=# class=info>(?)<span><b>启用:</b> 使用库存数量<br><br><b>禁用:</b>使用库存状态 (in stock/in backorder/out of stock)</span></a>';
+$txt['editsettings21'] = '使用订单模块';
+$txt['editsettings22'] = '禁用网站';
+$txt['editsettings23'] = '禁用网站标题';
+$txt['editsettings24'] = '禁用网站信息';
+$txt['editsettings25'] = '网络管理员Email';
+$txt['editsettings26'] = '电话号码 ';
+$txt['editsettings27'] = '传真号码';
+$txt['editsettings28'] = '银行帐号';
+$txt['editsettings29'] = '银行户名';
+$txt['editsettings30'] = '城市';
+$txt['editsettings31'] = '国家';
+$txt['editsettings32'] = 'Bank IBAN';
+$txt['editsettings33'] = 'Bank BIC';
+$txt['editsettings34'] = '商场开始年份 <a href=# class=info>(?)<span>公司开张的时间</span></a>';
+$txt['editsettings35'] = '商场标记 <a href=# class=info>(?)<span>设置商场的标记 <b>'.$gfx_dir.'</b></span></a>';
+$txt['editsettings36'] = '背景 (可选) <a href=# class=info>(?)<span>设置文件夹的背景 <b>'.$gfx_dir.'</b></span></a>';
+$txt['editsettings37'] = '公司水印 (可选) <a href=# class=info>(?)<span>设置标记水印</span></a>';
+$txt['editsettings38'] = '页面头信息 <a href=# class=info>(?)<span>设置页面头的欢迎信息</span></a>';
+$txt['editsettings39'] = '页面尾信息';
+$txt['editsettings40'] = '支持邮局发货';
+$txt['editsettings41'] = '支持现场提货';
+$txt['editsettings44'] = '设置被保存到数据库中';
+$txt['editsettings45'] = '银行信息';
+$txt['editsettings46'] = '主题设置';
+$txt['editsettings47'] = '商城设置';
+$txt['editsettings48'] = '订单设置';
+$txt['editsettings49'] = '数字格式';
+$txt['editsettings50'] = '商品描述最大长度设定<a href=# class=info>(?)<span>设置商品的描述字符的长度</span></a>';
+$txt['editsettings51'] = '不含税<a href=# class=info>(?)<span>支持不含税商品，如个人商品销售</span></a>';
+$txt['editsettings52'] = '银行名称';
+$txt['editsettings53'] = '价格格式 <a href=# class=info>(?)<span>设置价格的格式</span></a>';
+$txt['editsettings54'] = '商品ID';
+$txt['editsettings55'] = '描述';
+$txt['editsettings56'] = '商品ID和描述';
+$txt['editsettings57'] = '日期格式 <a href=# class=info>(?)<span>设置日期格式</span></a>';
+$txt['editsettings58'] = '查询gfx价格列表 <a href=# class=info>(?)<span></span></a>';
+$txt['editsettings59'] = '是否使用图片： <a href=# class=info>(?)<span>设置图片是否显示</span></a>';
+$txt['editsettings60'] = '发货设置';
+$txt['editsettings61'] = '付款设置';
+$txt['editsettings62'] = '支持银行汇款';
+$txt['editsettings63'] = '支持现金支付';
+$txt['editsettings64'] = '支持支票付款';
+$txt['editsettings65'] = '支持收货付款';
+$txt['editsettings67'] = '邮件地址';
+$txt['editsettings68'] = '货币种类';
+$txt['editsettings69'] = 'Use thumbnails in pricelist <a href=# class=info>(?)<span>Shows (if found) a small preview of the product picture in front of the description</span></a>';
+$txt['editsettings70'] = '关键字 (comma seperated) <a href=# class=info>(?)<span>Words on which you want to be found by search engines</span></a>';
+$txt['editsettings71'] = 'Used charset <a href=# class=info>(?)<span>Some languages need different character sets. For you it is probably gb2312</span></a>';
+$txt['editsettings72'] = 'Show General conditions link';
+$txt['editsettings73'] = 'Show Guarantee link';
+$txt['editsettings74'] = 'Show Shipping link';
+$txt['editsettings75'] = 'Pictures filename <a href=# class=info>(?)<span>Some languages have characters that are not allowed in filenames. It is best to use the database id as the picture ID in those (and most other) cases</span></a>';
+$txt['editsettings76'] = 'Database ID (推荐)';
+$txt['editsettings77'] = '商品ID';
+$txt['editsettings78'] = 'Show About Us link';
+$txt['editsettings79'] = 'Enable Live News <a href=# class=info>(?)<span>This enabled the live news feed from FreeWebshop.org, which informs you of updates and other related news. Only disable this if you are having difficulties with this option</span></a>';
+$txt['editsettings80'] = 'Pricelist thumb width <a href=# class=info>(?)<span>Width in pixels.<br />default=50<br/>0=disable resize</span></a>';
+$txt['editsettings81'] = 'Pricelist thumb height <a href=# class=info>(?)<span>Height in pixels.<br />default=50<br />0=disable resize</span></a>';
+$txt['editsettings82'] = 'Category thumb width <a href=# class=info>(?)<span>Width in pixels.<br />default=50<br />0=disable resize</span></a>';
+$txt['editsettings83'] = 'Category thumb height <a href=# class=info>(?)<span>Height in pixels.<br />default=50<br />0=disable resize</span></a>';
+$txt['editsettings84'] = 'Product pic. max. width <a href=# class=info>(?)<span>Maximum width in pixels.<br />default=450<br />9999=disable max</span></a>';
+$txt['editsettings85'] = 'Product pic. max. height <a href=# class=info>(?)<span>Maximum height in pixels.<br />default=350<br />9999=disable max</span></a>';
+$txt['editsettings86'] = '所有';
+
+// productadmin.php
+$txt['productadmin1'] = ' 文件被上载到 ';
+$txt['productadmin2'] = '文件上载错误请重试!';
+$txt['productadmin3'] = '请上载JPG或者GIF文件';
+$txt['productadmin4'] = '添加其他商品';
+$txt['productadmin5'] = '回到商品列表';
+$txt['productadmin6'] = '添加一个商品';
+$txt['productadmin7'] = '更新一个商品';
+$txt['productadmin8'] = '请首先添加商品类别';
+$txt['productadmin9'] = '商品名称';
+$txt['productadmin10'] = '商品描述 <a href=# class=info>(?)<span>支持HTML格式内容</span></a>';
+$txt['productadmin11'] = '价格 <a href=# class=info>(?)<span>格式: 123456.78</span></a>';
+$txt['productadmin12'] = '库存数量';
+$txt['productadmin13'] = '库存状况 (0|1|2) <a href=# class=info>(?)<span>0=缺货<br>1=现货<br>2=仓库</span></a>';
+$txt['productadmin14'] = '置顶';
+$txt['productadmin15'] = '新';
+$txt['productadmin16'] = '添加商品信息';
+$txt['productadmin17'] = '更新商品信息';
+$txt['productadmin18'] = '类别/目录';
+$txt['productadmin19'] = '请选择JPEG或者GIF文件';
+$txt['productadmin20'] = '上载';
+$txt['productadmin21'] = '上载一个图片';
+$txt['productadmin22'] = '请首先新增商品目录';
+$txt['productadmin23'] = '上传照片失败，因为此照片没有ID号!';
+$txt['productadmin24'] = '删除此商品';
+$txt['productadmin25'] = '商品成功转移';
+$txt['productadmin26'] = '商品被成功转移';
+
+// groupadmin.php
+$txt['groupadmin1'] = ' 文件被上传到 ';
+$txt['groupadmin2'] = '上传文件出现错误，请重试!';
+$txt['groupadmin3'] = '请上载JPEG或者GIF文件';
+$txt['groupadmin4'] = '商品类别被添加..';
+$txt['groupadmin5'] = '商品类别被更新..';
+$txt['groupadmin6'] = '商品类别被删除..';
+$txt['groupadmin7'] = '商品目录被添加..';
+$txt['groupadmin8'] = '商品目录被更新..';
+$txt['groupadmin9'] = '商品目录被移动..';
+$txt['groupadmin10'] = '商品目录被删除';
+$txt['groupadmin11'] = '类别名称';
+$txt['groupadmin12'] = '添加类别';
+$txt['groupadmin13'] = '没有商品类别';
+$txt['groupadmin14'] = '类别管理';
+$txt['groupadmin15'] = '新类别名';
+$txt['groupadmin16'] = '更新类别';
+$txt['groupadmin17'] = '删除类别';
+$txt['groupadmin18'] = '大类选项';
+$txt['groupadmin19'] = '小类选项';
+$txt['groupadmin20'] = '目录名称';
+$txt['groupadmin21'] = '添加目录';
+$txt['groupadmin22'] = '目录管理';
+$txt['groupadmin23'] = '新目录名称';
+$txt['groupadmin24'] = '更新目录';
+$txt['groupadmin25'] = '移动目录';
+$txt['groupadmin26'] = '删除目录';
+$txt['groupadmin27'] = '选择JPG或者GIF文件';
+$txt['groupadmin28'] = '上传';
+$txt['groupadmin29'] = 'Upload een afbeelding';
+$txt['groupadmin30'] = '通用选项';
+$txt['groupadmin31'] = '删除空的商品目录和类别';
+$txt['groupadmin32'] = '删除的商品目录数';
+$txt['groupadmin33'] = '删除的商品目录数';
+
+// uploadadmin.php
+$txt['uploadadmin1'] = ' 被上传到 ';
+$txt['uploadadmin2'] = '上传文件出错，请重试!';
+$txt['uploadadmin3'] = '请上传.SQL文件';
+$txt['uploadadmin4'] = '上传价格列表(.SQL)';
+$txt['uploadadmin5'] = '选择一个SQL文件';
+$txt['uploadadmin6'] = '上传SQL';
+$txt['uploadadmin7'] = 'SQL文件被添加到数据库';
+
+// adminedit.php
+$txt['adminedit1'] = '保存修改';
+$txt['adminedit2'] = '记录被更新...';
+$txt['adminedit3'] = '当前编辑 ';
+
+// shippingadmin.php
+$txt['shippingadmin1'] = 'Shipping method added';
+$txt['shippingadmin2'] = 'Shipping method removed';
+$txt['shippingadmin3'] = 'Shipping method edited';
+$txt['shippingadmin4'] = 'Supported shipping methods';
+$txt['shippingadmin5'] = '描述';
+$txt['shippingadmin6'] = '费用';
+$txt['shippingadmin7'] = "Only in $send_default_country?";
+$txt['shippingadmin8'] = '编辑';
+$txt['shippingadmin9'] = '删除';
+$txt['shippingadmin10'] = '添加';
+$txt['shippingadmin11'] = 'Edit shipping countries';
+$txt['shippingadmin12'] = '选择';
+$txt['shippingadmin13'] = '付款方式';
+$txt['shippingadmin14'] = 'Edit shipping method';
+$txt['shippingadmin15'] = 'NOTE: Your about to change a system-shipping method. This method triggers certain other parts of this webshop. Just change the description to your liking, but not the essence of the method';
+$txt['shippingadmin16'] = 'Edit default shipping country';
+$txt['shippingadmin17'] = 'Overige opties';
+
+// paymentadmin.php
+$txt['paymentadmin1'] = '添加付款方式';
+$txt['paymentadmin2'] = '删除付款方式';
+$txt['paymentadmin3'] = '编辑付款方式';
+$txt['paymentadmin4'] = 'Supported payment methods';
+$txt['paymentadmin5'] = '描述';
+$txt['paymentadmin6'] = '改变付款方式';
+$txt['paymentadmin7'] = 'Payment HTML code';
+$txt['paymentadmin8'] = '编辑';
+$txt['paymentadmin9'] = '删除';
+$txt['paymentadmin10'] = '添加';
+$txt['paymentadmin11'] = '选择';
+$txt['paymentadmin12'] = 'NOTE: Your about to change a system-payment method. This method triggers certain other parts of this webshop. Just change the description to your liking, but not the essence of the method';
+?>

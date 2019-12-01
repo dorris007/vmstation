@@ -1,0 +1,49 @@
+HOW TO ADD LANGUAGE FILES TO FREEWEBSHOP.ORG
+Copyright 2006 Elmar Wenners
+----------------------------
+
+Adding language files is easy. The biggest task is translating
+the "lang.txt" file, which holds all the sentences used by the 
+webshop software.
+
+To add a custom language, first find the corresponding country
+flag in the "gfx/flags" folder. If you found the correct flag,
+remember it's name.
+
+No go to the "langs" folder and copy the entire "uk" folder.
+rename this copied folder to the name your remembered of the flag
+you choose. For example "fr", if you are planning to add a france
+language file.
+
+In your new "fr" files are several files you will need to translate.
+Let me explain what they represent:
+
+conditions.txt - holds the general conditions of the store. Customers
+                 have to approve these before placing an order.
+                 
+guarantee.txt  - holds the guarantee conditions of the store. It
+                 explains to customers how your guarantee procedure
+                 works.
+                 
+index.php      - an empty file. Leave it empty. It's just there to
+                 prevent folder browsing.                 
+
+lang.txt       - the biggest file. It holds all the texts used by the
+                 webshop. Try not to remove any ' or " signs, or values
+                 that start with a $, because this will mess up the
+                 script.
+                 
+main.txt       - holds the text that will be displayed on the frontpage
+                 of the webshop. You can use it to welcome your visitor
+                 or tell something more about your company. HTML code
+                 is allowed.
+                 
+shipping.txt   - holds the shipping conditions. Customers can use this
+                 to find out how products are shipped to them.
+                 
+aboutus.txt    - holds general information about your shop
+
+
+After you translate all these files, you can upload your new language
+folder to the "langs" folder on your FTP. Upload it all in ASCII format
+if your FTP program has this option.

@@ -1,0 +1,88 @@
+ <?
+ // 获取当前的订单设置
+		if (!empty($_POST['currency'])) { $currency = $_POST['currency'] ; } else { $currency = ""; }
+		if (!empty($_POST['currency_symbol'])) {$currency_symbol = $_POST['currency_symbol'] ; } else { $cuurency_symbol = ""; }
+	    if (!empty($_POST['paymentdays'])) {$paymentdays = $_POST['paymentdays']; } else { $paymentdays = 0; }
+	    if (!empty($_POST['vat'])) {$vat = $_POST['vat']; } else { $vat = 0; }
+	    if (!empty($_POST['show_vat'])) {$show_vat = $_POST['show_vat']; } else { $show_vat = ""; }
+		if (!empty($_POST['order_prefix'])) {$order_prefix = $_POST['order_prefix']; } else { $order_prefix = ""; }
+	    if (!empty($_POST['order_suffix'])) {$order_suffix = $_POST['order_suffix']; } else { $order_suffix = ""; }
+		if (!empty($_POST['number_format'])) {$number_format = $_POST['number_format']; } else { $number_format = ""; }
+		if (!empty($_POST['date_format'])) {$date_format = $_POST['date_format']; } else { $date_format = ""; }
+		$db_prices_including_vat = CheckBox($_POST['db_prices_including_vat']); 
+		
+		
+		//商城设置
+		if (!empty($_POST['sales_mail'])) {$sales_mail = $_POST['sales_mail']; } else { $sales_mail = ""; }
+	    if (!empty($_POST['shopname'])) {$shopname = $_POST['shopname']; } else { $shopname = ""; }
+	    if (!empty($_POST['shopurl'])) {$shopurl = $_POST['shopurl']; } else { $shopurl = ""; }
+	    if (!empty($_POST['default_lang'])) {$default_lang = $_POST['default_lang']  ; } else { $default_lang = ""; }
+		if (!empty($_POST['send_default_country'])) { $send_default_country = $_POST['send_default_country']; }  else { $send_default_country = ""; }
+		$stock_enabled = CheckBox($_POST['stock_enabled']);
+	    $ordering_enabled = CheckBox($_POST['ordering_enabled']);
+	    $shop_disabled = CheckBox($_POST['shop_disabled']);
+		if (!empty($_POST['shop_disabled_title'])) {$shop_disabled_title = $_POST['shop_disabled_title']; } else { $shop_disabled_title = ""; }
+	    if (!empty($_POST['shop_disabled_reason'])) {$shop_disabled_reason = $_POST['shop_disabled_reason']; } else { $shop_disabled_reason = ""; }
+		if (!empty($_POST['webmaster_mail'])) {$webmaster_mail = $_POST['webmaster_mail']; } else { $webmaster_mail = ""; }
+	    if (!empty($_POST['shoptel'])) {$shoptel = $_POST['shoptel']; } else { $shoptel = ""; }
+	    if (!empty($_POST['shopfax'])) {$shopfax = $_POST['shopfax']; } else { $shopfax = ""; }
+		if (!empty($_POST['start_year'])) {$start_year = $_POST['start_year']; } else { $start_year = 2006; }
+		if (!empty($_POST['keywords'])) {$keywords = $_POST['keywords']; } else { $keywords = ""; }
+		if (!empty($_POST['pictureid'])) {$pictureid = $_POST['pictureid']; } else { $pictureid = 0; }
+		
+		
+		
+		//银行设置
+		if (!empty($_POST['bankaccount'])) {$bankaccount = $_POST['bankaccount']; } else { $bankaccount = ""; }
+	    if (!empty($_POST['bankaccountowner'])) {$bankaccountowner = $_POST['bankaccountowner']; } else { $bankaccountowner = ""; }
+	    if (!empty($_POST['bankcity'])) {$bankcity = $_POST['bankcity']; } else { $bankcity = ""; }
+	    if (!empty($_POST['bankcountry'])) {$bankcountry = $_POST['bankcountry']; } else { $bankcountry = ""; }
+	    if (!empty($_POST['bankname'])) {$bankname = $_POST['bankname']; } else { $bankname = ""; }
+	    if (!empty($_POST['bankiban'])) {$bankiban = $_POST['bankiban']; } else { $bankiban = ""; }
+	    if (!empty($_POST['bankbic'])) {$bankbic = $_POST['bankbic']; } else { $bankbic = ""; }
+	   
+	   
+	    //主题设置
+	    if (!empty($_POST['theme'])) { $theme = $_POST['theme']; }
+	    if (!empty($_POST['shop_logo'])) {$shop_logo = $_POST['shop_logo']; } else { $shop_logo = ""; }	
+		if (!empty($_POST['slogan'])) {$slogan = $_POST['slogan']; } else { $slogan = ""; }
+	    if (!empty($_POST['page_title'])) {$page_title = $_POST['page_title']; } else { $page_title = ""; }
+	    if (!empty($_POST['page_footer'])) {$page_footer = $_POST['page_footer']; } else { $page_footer = ""; }
+		if (!empty($_POST['max_description'])) {$max_description = $_POST['max_description']; } else { $max_description = 0; }
+	    $no_vat = CheckBox($_POST['no_vat']);
+	    if (!empty($_POST['pricelist_format'])) {$pricelist_format = $_POST['pricelist_format']; } else { $pricelist_format =     
+	    $search_prodgfx = CheckBox($_POST['search_prodgfx']);
+		$use_prodgfx = CheckBox($_POST['use_prodgfx']);
+		$thumbs_in_pricelist = CheckBox($_POST['thumbs_in_pricelist']);
+		if (!empty($_POST['charset'])) {$charset = $_POST['charset']; } else { $charset = ""; }
+		$conditions_page = CheckBox($_POST['conditions_page']);
+  	    $guarantee_page = CheckBox($_POST['guarantee_page']);
+  	    $shipping_page = CheckBox($_POST['shipping_page']);   
+  	    $aboutus_page = CheckBox($_POST['aboutus_page']);
+		$live_news = CheckBox($_POST['live_news']);
+		if (!empty($_POST['pricelist_thumb_width'])) {$pricelist_thumb_width = $_POST['pricelist_thumb_width']; } else { $pricelist_thumb_width = 0; }
+	    if (!empty($_POST['pricelist_thumb_height'])) {$pricelist_thumb_height = $_POST['pricelist_thumb_height']; } else { $pricelist_thumb_height = 0; }
+	    if (!empty($_POST['category_thumb_width'])) {$category_thumb_width = $_POST['category_thumb_width']; } else { $category_thumb_width = 0; }
+	    if (!empty($_POST['category_thumb_height'])) {$category_thumb_height = $_POST['category_thumb_height']; } else { $category_thumb_height = 0; }
+	    if (!empty($_POST['product_max_width'])) {$product_max_width = $_POST['product_max_width']; } else { $product_max_width = 9999; }
+	    if (!empty($_POST['product_max_height'])) {$product_max_height = $_POST['product_max_height']; } else { $product_max_height = 9999; }
+		
+		
+		
+		
+		
+	   
+	    if (!empty($_POST['sendcosts_default_country'])) { $sendcosts_default_country = $_POST['sendcosts_default_country']; } else { $sendcosts_default_country = 0; }
+	    if (!empty($_POST['sendcosts_other_country'])) { $sendcosts_other_country = $_POST['sendcosts_other_country']; } else { $sendcosts_other_country = 0; }
+	    if (!empty($_POST['rembours_costs'])) { $rembours_costs = $_POST['rembours_costs']; } else { $rembours_costs = ""; }
+	 
+	    $shipping_postal = CheckBox($_POST['shipping_postal']);
+	    $shipping_atstore = CheckBox($_POST['shipping_atstore']);
+	    //$shipping_unused = CheckBox($_POST['shipping_unused']);    
+	    $pay_bank = CheckBox($_POST['pay_bank']);
+	    $pay_atstore = CheckBox($_POST['pay_atstore']);
+	    $pay_paypal = CheckBox($_POST['pay_paypal']);
+	    $pay_onreceive = CheckBox($_POST['pay_onreceive']);
+	    //$pay_unused = CheckBox($_POST['pay_unused']);
+	    if (!empty($_POST['paypal_email'])) {$paypal_email = $_POST['paypal_email']; } else { $paypal_email = ""; }
+	    if (!empty($_POST['paypal_currency'])) {$paypal_currency = $_POST['paypal_currency']; } else { $paypal_currency = ""; }
